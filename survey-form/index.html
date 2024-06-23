@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head lang='en'>
+  <title>Survey Form</title>
+  <meta charset='utf-8' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel='stylesheet' href='styles.css' />
+</head>
+<body>
+  <h1 id='title'>Fitness Survey Form</h1>
+  <p id='description'>Provide us data for better service</p>
+  <form id='survey-form'>
+
+    <fieldset>
+      <legend>General Information</legend>
+      <label for='name' id='name-label'>Name: <input type='text' id='name' placeholder='Twitty Manymoon' required></label>
+      <label for='email' id='email-label'>Email: <input type='email' id='email' placeholder='twitty69@gmail.com' required></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Biographic Information</legend>
+      <label for='number' id='number-label'>Number: <input type='number' id='number' min=13 max=120 placeholder='13-120' required></label>
+      <label for='dropdown'>Favorite fruits: 
+      <select id='dropdown'>
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Coconut</option>
+        <option>Others</option>
+      </select>
+      <label>Gender:</label>
+      <label for='male-option'> <input type='radio' id='male-option' name='gender' value='male' class='inline' checked>Male</label>
+      <label for='female-option'> <input type='radio' id='female-option' name='gender' value='female' class='inline' checked>Female</label>
+      <label>What can you accomplish?:<label>
+      <label for='eat-well'>
+        <input type='checkbox' id='eat-well' value='eat-well' class='checkbox'> Eat Well
+      </label>
+      <label for='exercise-well'>
+        <input type='checkbox' id='exercise-well' value='exercise-well' class='checkbox'> Exercise Well
+      </label>
+      <label for='sleep-well'>
+        <input type='checkbox' id='sleep-well' value='sleep-well' class='checkbox'> Sleep Well
+      </label>
+      <br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional Comments</legend>
+      <label for='additional-comments'>
+      <textarea id='additional-comments' placeholder='Additional Comments...'></textarea>
+    </fieldset>
+
+    <label for="terms-and-conditions">
+    <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value='accept-terms-and-conditions'/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+    <input type='submit' id='submit'>
+  </form>
+</body>
+
